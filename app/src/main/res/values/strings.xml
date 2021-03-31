@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BorradorProyectoIntegrador</string>
+
+    //TMDB
+    <string name="api_key">656020b1f06a98f4d73cadd7336e7790</string>
+    <string name="language">es-US</string>
+    <string name="sort_by">popularity.desc</string>
+    <string name="timezone">America/BuenosAires</string>
+    <string name="poster_path">https://image.tmdb.org/t/p/w500</string>
+
+
+    //Pantalla Main
+    <string name="hintSearch"> Buscar pelicula o serie</string>
+    <string name="movie_tab">Peliculas</string>
+    <string name="serie_tab">Series</string>
+    <string name="comunidad_tab">Comentarios</string>
+
+    //Navigation View
+    <string name="nav_header_title">ScreenHolic</string>
+    <string name="nav_header_subtitle">screenholic@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_mis_favoritos">Mis Favoritos</string>
+    <string name="nav_header_item1">Inicio</string>
+    <string name="nav_header_item2">Sign In</string>
+    <string name="nav_header_item3">Encuestas</string>
+    <string name="nav_header_item4">Listas</string>
+    <string name="nav_header_communicate">Communicate</string>
+    <string name="nav_header_share">Share</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //Pantalla Login
+    <string name="logIn">Login:</string>
+    <string name="registrarse">No tengo cuenta, registrarme</string>
+    <string name="hintUsuario">Usuario</string>
+    <string name="hintContrasena">Contraseña</string>
+    <string name="hintRepitaContrasena">Repita Contraseña</string>
+    <string name="tvIngresarCon">Ingresar con:</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="tilUsuarioLoginError">Debes completar un Email válido</string>
+    <string name="tilContrasenaLoginError">Debe contener al menos 10 caracteres</string>
+    <string name="tilRepitaContrasenaLoginError">Las contraseñas no son iguales</string>
+
+    //Pantalla Trailer
+    <string name="textViewResumen">Resumen</string>
+    <string name="textViewComentarios">Comentarios</string>
+
+    //Peliculas
+    <string name="peliculasTodas">Peliculas</string>
+    <string name="seriesTodas">Series</string>
+    <string name="favoritosVacio">Aún no tienes Favoritos</string>
+    <string name="favoritos">Favoritos</string>
+
+    //Filtros
+    <string name="todosFiltro"> -- Ver Todos -- </string>
+
+    //FACEBOOK
+    <string name="facebook_app_id">1110877119088927</string>
+    <string name="fb_login_protocol_scheme">fb1110877119088927</string>
+
+    //TWITTER
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">JQLPkAJTDjirkduV07mxCfRZg</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">jJlFqmRuPcXXjEJ6JWEWoHOPGJ7geZVrF22B8kWrNWS0tZhsKd</string>
+
+    //FirebaseDataBase
+    <string name="child_usuarios">usuarios_perfiles</string>
+    <string name="child_fotos_usuarios">usuarios_fotos_perfil</string>
+    <string name="child_usuario_perfil_cant_me_gusta">cantidadMeGusta</string>
+    <string name="child_usuario_perfil_cant_compartidos">cantidadCompartidos</string>
+    <string name="child_usuario_perfil_cant_comentarios">cantidadComentarios</string>
+    <string name="child_usuario_perfil_peliculas_favoritas">peliculasFavoritas</string>
+    <string name="child_usuario_perfil_series_favoritas">seriesFavoritas</string>
+    <string name="child_usuario_perfil_id_comentarios">idMisComentarios</string>
+    <string name="child_base_comentarios">todosLosComentarios</string>
+
+    //PerfilUsuario
+    <string name="cant_de">Cantidad de </string>
+
+    //AgregarComentario
+    <string name="agregar_rating">Cuantas estrellas le darías:</string>
+    <string name="hint_agregar">Agruegue aquí sus comentarios</string>
+    <string name="btn_agregar">Subir Comentario</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+    //Compartir Comentarios
+    <string name="toast_inicio">Compartir comentario</string>
+    <string name="compartir_comentario_titulo">Comentario sobre</string>
+    <string name="compartir_comentario_quien">comentó</string>
+
+</resources>

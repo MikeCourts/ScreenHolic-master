@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.TrailerActivity"
+    android:background="@color/colorPrimaryDarkTrans"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:contentScrim="?attr/colorPrimary"
+            >
+            
+
+            
+            <include
+                android:id="@+id/toolbarTrailer"
+                layout="@layout/toolbar"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/youtubePlayer"
+                    android:background="#000000"
+                    />
+            </FrameLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/rbShowRoom"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:isIndicator="true"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        tools:rating="5"
+                        android:theme="@style/RatingBar"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <Button
+                            android:id="@+id/btnFavorito"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_favorite_border" />
+
+                        <Button
+                            android:id="@+id/btnCompartir"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_share"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardPreventCornerOverlap="false"
+                        android:background="@color/colorPrimaryTrans"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/colorPrimaryTrans"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/textViewResumen"
+                                android:textColor="@color/colorAccentDark"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/textViewResumenDetalle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorBlanco"
+                                tools:text="Rodrigo siempre quiso cantar. Sus padres lo acompañan en su deseo y Rodrigo ingresa en el ambiente de la música tropical como cantante romántico donde su impacto es muy grande debido a su juventud, belleza y magnetismo. En el momento que comienza un ascenso en su carrera, lo sorprende la trágica muerte de su padre y se recluye junto a su familia en Córdoba..." />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewInfoPeli"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="10dp"
+
+                        />
+
+
+                    <View
+                        android:id="@+id/devider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorDivider" />
+
+                    <TextView
+                        android:id="@+id/comentTitle"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textViewComentarios"
+                        android:textColor="@color/colorAccentDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerComentariosTrailer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabAgregarComentario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_anchor="@id/comentTitle"
+                    android:layout_marginRight="36dp"
+                    app:layout_anchorGravity="right"
+                    app:fabSize="mini"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:elevation="6dp"
+                    />
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+ </android.support.design.widget.CoordinatorLayout>
